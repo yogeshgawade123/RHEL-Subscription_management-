@@ -1,0 +1,34 @@
+subscription-manager list
+
+subscription-manager register --username < username > --password < >
+
+subscription-manager subscribe
+subscription-manager attach --auto
+subscription-manager list --available  >> get pool ID 
+subscription-manager attach --pool= < pool iD >
+subscription-manager identity
+ubscription-manager list --consumed   >> subcriotion details 
+
+
+----------------------------------------------------------------
+
+FOR Insight registraton 
+
+yum install insights-client 
+dnf -y install ansible rhc-worker 
+
+insights-client --register
+insights-client --status
+
+rhc connect
+rhc status 
+
+systemctl status  rhcd 
+
+-----------------------
+for remidation permission 
+
+Add group and name ( ) - add below role 
+you must be a member of a User Access group with the Remediations administrator role.
+
+
